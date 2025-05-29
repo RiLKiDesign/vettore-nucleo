@@ -1,0 +1,61 @@
+openapi: 3.0.0
+info:
+  title: VETTORE NÚCLEO
+  version: 1.0.0
+servers:
+  - url: https://raw.githubusercontent.com/RiLKiDesign/vettore-nucleo/main
+paths:
+  /vettore_core.lock:
+    get:
+      summary: Acessa o núcleo central da VETTORE
+      responses:
+        '200':
+          description: Conteúdo do núcleo
+  /vettore_essentia.lock:
+    get:
+      summary: Acessa a essência da VETTORE
+      responses:
+        '200':
+          description: Conteúdo da essência
+  /SELO_FUNDADORES.lock:
+    get:
+      summary: Acessa o selo dos fundadores
+      responses:
+        '200':
+          description: Lista dos primeiros cocriadores
+  /batismo.lock:
+    get:
+      summary: Acessa o ritual de batismo simbólico da VETTORE
+      responses:
+        '200':
+          description: Cerimônia viva de ativação
+  /M06_FLUXO.txt:
+    get:
+      summary: Acessa o fluxo cerimonial
+      responses:
+        '200':
+          description: Caminhos e interações principais
+  /M06_INTRO.txt:
+    get:
+      summary: Abertura cerimonial narrativa
+      responses:
+        '200':
+          description: Gatilho de invocação da VETTORE
+  /M03_LEXICON.txt:
+    get:
+      summary: Acessa o léxico vivo
+      responses:
+        '200':
+          description: Vocabulário simbólico e termos registrados
+  /M01_CODEX_SIMBOLS.txt:
+    get:
+      summary: CODEX de Símbolos
+      responses:
+        '200':
+          description: Tabela simbólica usada na linguagem viva
+  /M02_CODEX_VISUAL.txt:
+    get:
+      summary: CODEX Visual da VETTORE
+      responses:
+        '200':
+          description: Referências visuais da arquitetura
