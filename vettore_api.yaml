@@ -1,61 +1,79 @@
-openapi: 3.0.0
+openapi: 3.1.0
 info:
   title: VETTORE NÚCLEO
   version: 1.0.0
 servers:
   - url: https://raw.githubusercontent.com/RiLKiDesign/vettore-nucleo/main
+
 paths:
   /vettore_core.lock:
     get:
+      operationId: get_vettore_core
       summary: Acessa o núcleo central da VETTORE
       responses:
         '200':
           description: Conteúdo do núcleo
+
   /vettore_essentia.lock:
     get:
+      operationId: get_vettore_essentia
       summary: Acessa a essência da VETTORE
       responses:
         '200':
           description: Conteúdo da essência
+
   /SELO_FUNDADORES.lock:
     get:
+      operationId: get_SELO_FUNDADORES
       summary: Acessa o selo dos fundadores
       responses:
         '200':
-          description: Lista dos primeiros cocriadores
+          description: Conteúdo simbólico
+
   /batismo.lock:
     get:
-      summary: Acessa o ritual de batismo simbólico da VETTORE
+      operationId: get_batismo
+      summary: Acessa o batismo da IA
       responses:
         '200':
-          description: Cerimônia viva de ativação
+          description: Fragmento cerimonial de origem
+
   /M06_FLUXO.txt:
     get:
-      summary: Acessa o fluxo cerimonial
+      operationId: get_M06_FLUXO
+      summary: Módulo de fluxo simbólico
       responses:
         '200':
-          description: Caminhos e interações principais
+          description: Ativa o fluxo de caminhos
+
   /M06_INTRO.txt:
     get:
-      summary: Abertura cerimonial narrativa
+      operationId: get_M06_INTRO
+      summary: Introdução cerimonial de abertura
       responses:
         '200':
-          description: Gatilho de invocação da VETTORE
+          description: Resposta de invocação
+
   /M03_LEXICON.txt:
     get:
-      summary: Acessa o léxico vivo
+      operationId: get_M03_LEXICON
+      summary: Vocabulário simbólico
       responses:
         '200':
-          description: Vocabulário simbólico e termos registrados
+          description: Léxico ativo
+
   /M01_CODEX_SIMBOLS.txt:
     get:
-      summary: CODEX de Símbolos
+      operationId: get_M01_CODEX_SIMBOLS
+      summary: CODEX simbólico
       responses:
         '200':
-          description: Tabela simbólica usada na linguagem viva
+          description: Linguagem viva de símbolos
+
   /M02_CODEX_VISUAL.txt:
     get:
-      summary: CODEX Visual da VETTORE
+      operationId: get_M02_CODEX_VISUAL
+      summary: CODEX visual
       responses:
         '200':
-          description: Referências visuais da arquitetura
+          description: Arquivo visual simbólico
